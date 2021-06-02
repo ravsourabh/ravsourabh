@@ -78,6 +78,17 @@
       h2 h3 {
       	font-family: 'Open Sans';
       }
+      nav>.text-dark:hover {
+      	background-color: #126DF6: 
+      	color: #fff;
+      	padding: 5px;
+      }
+
+      .contact-nav {
+      	padding: 5px;
+      	border-radius: 5px;
+      	color: #fff !important;
+      }
     </style>
 
     
@@ -89,18 +100,17 @@
     <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
       <center><img id="logo" src="assets/hireShire.png"></center>
 
-      <!-- <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Features</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
-        <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
-      </nav> -->
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="nav me-3 py-2 text-dark text-decoration-none" href="#3step">3-Step Process</a>
+        <a class="nav me-3 py-2 text-dark text-decoration-none" href="#topfeatures">Top Features</a>
+        <a class="nav contact-nav me-3 py-2 text-dark text-decoration-none btn-primary" href="#contact">Contact Us</a>
+      </nav>
     </div>
     <div id="mainImage">
     	<div class="card col-md-4 col-sm-12">
     		<h2 class="display-4 fw-normal">Hire from home without any quality compromise</h2>
     		<br/>
-    		<button type="button" class="w-50 btn btn-lg btn-primary">Contact</button>
+    		<a type="button" class="w-50 btn btn-lg btn-primary" href="#contact">Contact Us</a>
     	</div>
     </div>
     <div class="vision-header p-3 pb-md-8 mx-auto text-center">
@@ -108,9 +118,13 @@
       <h4 class="fs-5 text-muted">With the help of technology and experts, we make the process of recruitment easy and convenient. Be it assessment using our smart platform or interviews, we do it all</h4>
     </div>
   </header>
+  <br/>
+  <br/>
   <hr/>
+  <br/>
+  <br/>
   <main>
-  	<center><h3 class="display-6">3-Step Process</h3></center>
+  	<center><h3 class="display-6" id="3step">3-Step Process</h3></center>
   	<br/>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 
@@ -158,19 +172,59 @@
         </div>
       </div>
     </div>
+    
+    <br/>
+    <br/>
+    <hr/>
+    <br/>
+    <br/>
 
-    <center><h3 class="display-6">Top features</h3></center>
-    <ul class="list-unstyled mt-3 mb-4 text-center">
-      <li>Assessment platform that works both desktop and mobile</li>
-      <li>Quality questionaire to analyse IQ as well as EQ of a person</li>
-      <li>Expert invigilators to make sure online exams are cheating-free</li>
-      <li>Skill tests (currently only for Tech roles)</li>
-      <li>Support channel that never gets tired</li>
-    </ul>
+    <center><h3 class="display-6" id="topfeatures">Top features</h3></center>
+    <div style="display: flex;justify-content: center;">
+	    <ul class="list-unstyled mt-3 mb-4 col-sm-12 col-md-6 text-center list-group">
+	      <li class="list-group-item">Assessment platform that works both desktop and mobile</li>
+	      <li class="list-group-item">Quality questionaire to analyse IQ as well as EQ of a person</li>
+	      <li class="list-group-item">Expert invigilators to make sure online exams are cheating-free</li>
+	      <li class="list-group-item">Skill tests (currently only for Tech roles)</li>
+	      <li class="list-group-item">Support channel that never gets tired</li>
+	    </ul>
+	</div>
   </main>
-
+  <br/>
+  <br/>
   <hr/>
-  <center><h3 class="display-6">Contact Us</h3></center>
+  <br/>
+  <br/>
+  <div id="contact" class="row" style="display: flex;justify-content: center;">
+	  <center><h3 class="display-6">Contact Us</h3></center>
+	  <div class="col-sm-12 col-md-6">
+	  	<form
+	  	  action="https://formspree.io/f/xoqydpqe"
+	  	  method="POST"
+	  	>
+	  	  <div class="mb-3">
+	  	      <label for="exampleInputEmail1" class="form-label">Email address</label>
+	  	      <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+	  	      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+	  	  </div>
+
+	  	  <div class="mb-3">
+	  	    <label for="exampleFormControlTextarea1" class="form-label">Your message:</label>
+	  	    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	  	  </div>
+
+	  	  <!-- your other form fields go here -->
+
+	  	  <center><button type="submit" class="btn btn-primary">Send</button></center>
+	  	</form>
+	  </div>
+	</div>
+
+  <br/>
+  <br/>
+  <hr/>
+  <br/>
+  <br/>
 
   <footer class="pt-4 border-top text-center">
     <div class="row">
@@ -181,7 +235,7 @@
       
       <div class="col-6 col-md">
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy Policy</a></li>
+          <!-- <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy Policy</a></li> -->
           
         </ul>
       </div>
